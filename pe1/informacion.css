@@ -1,0 +1,254 @@
+/* Cuerpo de la página */
+body {
+    font-family: Georgia, serif;
+    background-color: #fff8f0;
+    margin: 0;
+    color: #333;
+}
+
+/* Cabecera */
+header {
+    background: linear-gradient(to right, #5a2a27, #7d3e3e);
+    color: #fff;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+}
+
+header, footer {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box; 
+}
+
+header .cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    height: 110px;
+    width: 90px;
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3));
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-family: 'Cinzel', serif;
+    margin-left: 1rem;
+    flex: 1;
+    color: #ffe6c7;
+    text-shadow: 1px 1px 2px #000;
+}
+
+header .login-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+header .login-form input,
+header .login-form button {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Georgia', serif;
+}
+
+header .login-form button {
+    background-color: #e0b973;
+    color: #2e2e2e;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .login-form button:hover {
+    background-color: #c89f5d;
+}
+
+header .alta-link {
+    color: #ffe6c7;
+    margin-left: 1rem;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
+    background: #3b1f1f;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.4);
+}
+
+header nav a {
+    color: #ffe6c7;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+header nav a:hover {
+    color: #f7c873;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Sección de horarios de las pistas/pabellones */
+.club-section {
+    margin-bottom: 2rem;
+}
+
+.instalaciones-horarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.instalacion {
+    background-color: #fff8f0;
+    border: 2px solid #d6bfa5;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.instalacion h3 {
+    margin-bottom: 0.5rem;
+    color: #5c3c1f;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #e0b973;
+}
+
+table th,
+table td {
+    background-color: #f7cf9a41;
+    padding: 0.5rem;
+    border: 1px solid #a68b5b;
+    text-align: center;
+}
+
+/* Calendario */
+
+/* Sección principal */
+section {
+    padding: 1rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Sección de los meses en fila */
+section .meses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.mes {
+    flex: 1 1 calc(20% - 1rem);
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.mes h2 {
+    background-color: #a67c52;
+    color: #fff8f0;
+    padding: 0.3rem;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.mes table {
+    width: 100%;
+    border: 1px solid #c5b59b;
+    font-size: 0.6rem;
+}
+
+.mes th,
+.mes td {
+    padding: 0.5rem;
+    border: 1px solid #c7a163;
+    text-align: center;
+    background-color: #fff;
+}
+
+.mes th {
+    background-color: #e0b973;
+    font-family: 'Cinzel', serif;
+}
+
+/* Colores de los días */
+.mes .lunes {
+    background-color: #f3a381ae;
+    font-weight: bold;
+}
+
+.mes .martes {
+    background-color: #f3e881ae;
+    font-weight: bold;
+}
+
+.mes .restoDias {
+    background-color: #a9f381ae;
+    font-weight: bold;
+}
+
+/* Precios inscripciones y entradas */
+.precios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.precios th,
+.precios td {
+    border: 1px solid #865252be;
+    padding: 0.8rem;
+    text-align: center;
+    background-color: #ffd5d546;
+}
+
+.precios th {
+    background-color: #ffc2c2;
+    font-family: 'Cinzel', serif;
+}
+
+/* Pie de página */
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 2.5rem;
+    background-color: #2e1a1a;
+    color: #ffe6c7;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    border-top: 4px solid #7d3e3e;
+}
+
+footer a {
+    color: #f7c873;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffd700;
+}

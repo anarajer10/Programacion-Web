@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugerencias - Ludus Tempus</title>
+    <link rel="stylesheet" href="sugerencias.css">
+</head>
+
+<body>
+    <header>
+        <div class="cabecera">
+            <img src="imagenes/logo.png" alt="Logo del club" class="logo">
+            <h1>LUDUS TEMPUS</h1>
+            <form class="login-form">
+                <input type="text" placeholder="Usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <a href="altausuarios.html" class="alta-link">Alta de usuarios</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="conoce_club.html">Conoce Nuestro Club</a></li>
+                <li><a href="eventos.html">Eventos Deportivos</a></li>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="sugerencias.html">Sugerencias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sugerencias-section">
+            <h2>Experiencias, Opiniones y Sugerencias</h2>
+            <div class="sugerencias-container">
+                <div class="sugerencia">
+                    <h3>Álvaro Martín</h3>
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                    <p>"Me ha sorprendido lo bien organizado que está todo. Las actividades están muy bien pensadas y el
+                        ambiente es genial."</p>
+                </div>
+                <div class="sugerencia">
+                    <h3>Elisa Jiménez</h3>
+                    <div class="estrellas">⭐⭐⭐☆☆</div>
+                    <p>"Echo en falta actividades más enfocadas a principiantes. Sería genial tener sesiones
+                        introductorias para cada deporte."</p>
+                </div>
+                <div class="sugerencia">
+                    <h3>Diego Lorenzo</h3>
+                    <div class="estrellas">⭐⭐⭐⭐☆</div>
+                    <p>"El taller de lucha grecorromana fue brutal, aprendí muchísimo. El monitor es muy profesional."
+                    </p>
+                </div>
+                <div class="sugerencia">
+                    <h3>Lucía Gallar</h3>
+                    <div class="estrellas">⭐⭐⭐☆☆</div>
+                    <p>"Me encantaría que añadieran actividades nocturnas o eventos especiales los fines de semana."</p>
+                </div>
+                <div class="sugerencia">
+                    <h3>Antonio Ruiz</h3>
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                    <p>"El club tiene un aire muy auténtico, parece sacado de otra época. Es un lugar ideal para
+                        desconectar y hacer deporte."</p>
+                </div>
+                <div class="sugerencia">
+                    <h3>Ignacio González</h3>
+                    <div class="estrellas">⭐⭐⭐⭐☆</div>
+                    <p>"Las instalaciones son excelentes, pero sería fantástico tener más variedad en los horarios de
+                        las actividades."</p>
+                </div>
+                <div class="sugerencia">
+                    <h3>Mara de la Torre</h3>
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                    <p>"He aprendido mucho en el curso de esgrima medieval. Los entrenadores son muy capacitados y el
+                        ambiente es increíble."</p>
+                </div>
+                <div class="sugerencia">
+                    <h3>Juan Pérez</h3>
+                    <div class="estrellas">⭐⭐⭐⭐☆</div>
+                    <p>"Me encantan los deportes tradicionales, pero me gustaría que incluyeran más opciones de deportes
+                        con contacto."</p>
+                </div>
+                <div class="sugerencia">
+                    <h3>Rosa Aragón</h3>
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                    <p>"Una experiencia única, tanto para principiantes como para expertos. Todo el mundo es bienvenido
+                        y el ambiente es muy amigable."</p>
+                </div>
+                <div class="sugerencia">
+                    <h3>Raúl Gómez</h3>
+                    <div class="estrellas">⭐⭐⭐☆☆</div>
+                    <p>"Las actividades están muy bien, pero me gustaría que fueran más dinámicas. A veces se siente que
+                        la rutina es un poco monótona."</p>
+                </div>
+            </div>
+
+            <!-- Formulario para dejar una nueva sugerencia -->
+            <h2>Deja tu sugerencia</h2>
+            <form action="sugerencia_enviada.html" method="POST">
+                <div>
+                    <label for="nombre">Tu nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="sugerencia">Tu sugerencia:</label>
+                    <textarea id="sugerencia" name="sugerencia" rows="4" required></textarea>
+                </div>
+                <div>
+                    <label for="estrellas">Selecciona el número de estrellas:</label>
+                    <select id="estrellas" name="estrellas" required>
+                        <option value="1">1 estrella</option>
+                        <option value="2">2 estrellas</option>
+                        <option value="3">3 estrellas</option>
+                        <option value="4">4 estrellas</option>
+                        <option value="5">5 estrellas</option>
+                    </select>
+                </div>
+                <button type="submit">Enviar Sugerencia</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ludus Tempus</p>
+        <a href="contacto.html">Contacto</a> |
+        <a href="como_se_hizo.pdf">Como se hizo</a>
+    </footer>
+</body>
+
+</html>

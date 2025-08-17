@@ -1,0 +1,185 @@
+/* Cuerpo de la página */
+body {
+    font-family: Georgia, serif;
+    background-color: #fff8f0;
+    margin: 0;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #7d3e3e;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    font-family: 'Cinzel', serif;
+}
+
+/* Cabecera */
+header {
+    background: linear-gradient(to right, #5a2a27, #7d3e3e);
+    color: #fff;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10;
+}
+
+header .cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    height: 110px;
+    width: 90 px;
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3));
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-family: 'Cinzel', serif;
+    margin-left: 1rem;
+    flex: 1;
+    color: #ffe6c7;
+    text-shadow: 1px 1px 2px #000;
+}
+
+header .login-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+header .login-form input,
+header .login-form button {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Georgia', serif;
+}
+
+header .login-form button {
+    background-color: #e0b973;
+    color: #2e2e2e;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .login-form button:hover {
+    background-color: #c89f5d;
+}
+
+header .alta-link {
+    color: #ffe6c7;
+    margin-left: 1rem;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
+    background: #3b1f1f;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.4);
+}
+
+header nav a {
+    color: #ffe6c7;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+header nav a:hover {
+    color: #f7c873;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Eventos */
+.eventos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+    background-color: #fff8f0;
+}
+
+.evento {
+    background-color: #fef2e0;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 2px solid #c89f5d;
+}
+
+.evento:hover {
+    transform: translateY(-6px);
+}
+
+.evento img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #e0c4a7;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.evento h3 {
+    font-family: 'Cinzel', serif;
+    color: #5a2a27;
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.evento p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0 1rem 1.5rem;
+    color: #333;
+}
+
+/* Pie de página */
+footer {
+    padding: 2.5rem;
+    background-color: #2e1a1a;
+    color: #ffe6c7;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    border-top: 4px solid #7d3e3e;
+}
+
+footer a {
+    color: #f7c873;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffd700;
+}
+
+/* Responsive design: para pantallas medianas */
+@media (max-width: 768px) {
+    .evento img {
+        height: 200px;
+    }
+
+    .evento h3 {
+        font-size: 1.4rem;
+    }
+
+    .evento p {
+        font-size: 1rem;
+    }
+}
