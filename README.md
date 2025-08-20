@@ -4,7 +4,7 @@ Tercero de la rama SI. Había que hacer una página web sobre un club deportivo,
 una estática y la segunda, dinámica.
 
 ## Prácticas
--**pe1/** Primera práctica, con los archivos .html y .css además de la carpeta con las imágenes.
+-**pe1/** Primera práctica, con los archivos .html y .css además de la carpeta con las imágenes.<br>
 -**pe2/** Segunda práctica, en la que además se contaba con el servidor proporcionado para la 
           asignatura para convertir la página web de la primera práctica en una dinámica junto 
           con los nuevos elementos pedidos. 
